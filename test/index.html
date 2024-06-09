@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.educatiob-section {
+    background-image: url('https://kidmedpeds.com/wp-content/uploads/2021/01/child-care-template-tosca-blob-shape.svg');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.educatiob-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.eduic {
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.eduic h5 {
+    color: black;
+    padding-top: 10%;
+    font-size: 18px;
+}
+
+.dd {
+    height: 50px;
+    width: 50px;
+    background: #66d7d1;
+    border-radius: 50%;
+    position: absolute;
+    right: 90px;
+    top: 20%;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.dd:hover {
+    transform: scale(2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .educatiob-section {
+        background-position: center;
+        padding: 10px;
+    }
+
+    .educatiob-section h1 {
+        font-size: 36px;
+    }
+
+    .eduic {
+        width: 80%;
+        height: auto;
+    }
+
+    .eduic h5 {
+        font-size: 16px;
+        padding-top: 5%;
+    }
+
+    .dd {
+        right: 10px;
+        top: auto;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .educatiob-section h1 {
+        font-size: 28px;
+    }
+
+    .eduic {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .eduic h5 {
+        font-size: 14px;
+        padding-top: 5%;
+    }
+
+    .dd {
+        right: 10px;
+        bottom: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .dd:hover {
+        transform: scale(1.5);
+    }
+}
+#cv{
+    right: 150px;
+    top: 30%;
+}
+#bv{
+    right: 200px;
+    top: 40%;
+}
+</style>
+<body>
+    <section class="educatiob-section" id="education"> 
+        <h1>Education</h1> 
+        <div class="eduic">
+            <h5 class="edu-text">
+                Bachelor's of Biomedical Engineering at Yarmouk University.<br><br>
+                GPA is 78.5<br><br>
+                Year of graduation is 2023<br><br>
+                ABET Accredited Hijjawi faculty for engineering technology.
+            </h5>
+        </div>  
+        <div class="dd"></div> <div class="dd" id="cv"></div>  <div class="dd" id="bv"></div>
+    </section>
+</body>
+</html>
